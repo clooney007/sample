@@ -67,7 +67,7 @@ class ContactPage_Controller extends Page_Controller {
     public function submit($data, $form) {        
         // Set data
         $From = $data['Email'];
-        $Subject = "System email: Contact message from the Bluebridge website";
+        $Subject = "System email: Contact message from the **** website";
         if ($data['ContactFormTopics']) {
           $topic = ContactFormTopic::get()->byID($data['ContactFormTopics']);
           $data['Topic'] = $topic->Title;
